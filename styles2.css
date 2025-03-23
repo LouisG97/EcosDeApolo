@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff;
     color: #333;
     margin: 0;
     padding: 0;
@@ -16,8 +16,9 @@ header {
 .banner{
     text-align: center;
     padding: 10px;
-    background-color: #0A3A52;
+    background: linear-gradient(90deg, #093f56, #063245);
     color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 
@@ -30,7 +31,7 @@ header .logo {
 }
 
 header .logo2 {
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     display: block;
     margin: 0 auto 10px auto;
@@ -55,7 +56,7 @@ header img {
 
 nav {
     text-align: center;
-    background-color: #35393d;
+    background: linear-gradient(90deg, #093f56, #063245);
 }
 
 nav ul li {
@@ -64,19 +65,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #C79202  ;
     text-decoration: none;
     padding: 2px 20px;
     display: block;
 }
 
+
+
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #195471;
 }
 
 h1 {
     margin: 20px 0 0 0;
     font-size: 2em;
+}
+
+.col-h2 {
+
+    color: #C79202  ;
+
 }
 
 .main-title {
@@ -93,11 +102,14 @@ h1 {
     color: #333; /* Color del texto */
 }
 
+
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background: linear-gradient(180deg, #7C0211, #450009);
 }
 
 .featured-image {
@@ -186,8 +198,9 @@ main {
 #sobre-mi {
     max-width: 800px;
     text-align: justify;
-    background: #fff;
+    background: linear-gradient(180deg, #093f56, #063245);
     padding: 20px;
+    color: #C79202  ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -195,15 +208,16 @@ main {
 #contacto {
     max-width: 800px;
     text-align: center;
-    background: #fff;
+    background: linear-gradient(180deg, #093f56, #063245);
+    color: #C79202  ;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 footer {
-    background-color: #262b30;
-    color: #fff;
+    background: linear-gradient(180deg, #093f56, #063245);
+    color: #C79202  ;
     text-align: center;
     padding: 10px;
 }
@@ -214,7 +228,7 @@ footer .social-icons {
 
 footer .social-icons a {
     margin: 0 10px;
-    color: #fff;
+    color: #C79202  ;
     font-size: 24px;
     transition: color 0.3s ease;
 }
