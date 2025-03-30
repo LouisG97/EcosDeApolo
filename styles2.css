@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #fff;
     color: #333;
     margin: 0;
@@ -31,7 +31,7 @@ header .logo {
 }
 
 header .logo2 {
-    max-width: 400px;
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto 10px auto;
@@ -57,6 +57,8 @@ header img {
 nav {
     text-align: center;
     background: linear-gradient(90deg, #093f56, #063245);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.25em;
 }
 
 nav ul li {
@@ -80,11 +82,23 @@ nav ul li a:hover {
 h1 {
     margin: 20px 0 0 0;
     font-size: 2em;
+    font-family: 'Playfair Display', serif;
 }
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.05em;
+}
+
+
 
 .col-h2 {
 
     color: #C79202  ;
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -220,6 +234,7 @@ footer {
     color: #C79202  ;
     text-align: center;
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer .social-icons {
