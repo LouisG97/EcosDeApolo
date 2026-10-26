@@ -28,16 +28,23 @@
     });
   });
 
-  // Horizontal carousel controls for cast and on-stage photographs.
-  document.querySelectorAll('.carousel-shell').forEach((shell) => {
-    const track = shell.querySelector('.carousel-track');
-    const prev = shell.querySelector('.carousel-prev');
-    const next = shell.querySelector('.carousel-next');
-    if (!track || !prev || !next) return;
-    const step = () => Math.max(220, track.clientWidth * 0.78);
-    prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
-    next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
-  });
+  // Horizontal cast carousel with accessible previous/next controls.
+  const castCarousel = document.getElementById('cast-carousel');
+  if (castCarousel) {
+    const castPrev = document.querySelector('.cast-carousel-prev');
+    const castNext = document.querySelector('.cast-carousel-next');
+    const scrollCast = (direction) => {
+      const card = castCarousel.querySelector('.cast-card');
+      const amount = card ? card.getBoundingClientRect().width + 18 : castCarousel.clientWidth * 0.8;
+      castCarousel.scrollBy({ left: direction * amount, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    };
+    castPrev?.addEventListener('click', () => scrollCast(-1));
+    castNext?.addEventListener('click', () => scrollCast(1));
+    castCarousel.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') { event.preventDefault(); scrollCast(-1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); scrollCast(1); }
+    });
+  }
 
   // Accessible, keyboard-friendly production gallery lightbox.
   const lightbox = document.getElementById('lightbox');

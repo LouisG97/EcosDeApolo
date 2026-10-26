@@ -19,10 +19,3 @@ Mantiene HTML, CSS y JavaScript y conserva Bootstrap 5 para la navegación adapt
 
 ## Pruebas recomendadas antes de publicar
 Abrir ambas páginas en móvil y escritorio; verificar menú, correo, Instagram, WhatsApp, perfiles del elenco, galería y carga de recursos externos.
-
-## Actualización de elenco y galerías
-
-- Se añadió a Luis Gómez como Paul, con enlace a Instagram: https://www.instagram.com/jluisgmz97/.
-- Las secciones de elenco y fotografías de la función ahora usan carruseles horizontales con controles y desplazamiento táctil.
-- La galería «Momentos en escena» utiliza las 15 fotografías de la función proporcionadas para esta actualización. Las imágenes del carrusel se muestran completas dentro de su marco para evitar recortes importantes; al seleccionarlas se pueden ampliar en el visor.
-- Los archivos originales de las fotografías se conservan dentro de `img/`, y sus versiones WebP optimizadas están en `img/optimized/`.
