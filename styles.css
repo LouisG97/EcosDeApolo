@@ -41,10 +41,10 @@
 .preproduction-grid .pre-img1{object-position:center 15%}
 .preproduction-grid .pre-img2{object-position:center 14%}
 .preproduction-grid .pre-img3{object-position:center 14%}
-.preproduction-grid .pre-img4{object-position:center 17%}
+.preproduction-grid .pre-img4{object-position:center 3%}
 .preproduction-grid .pre-img6{object-position:center 16%}
 .preproduction-grid .pre-img7{object-position:center 15%}
-.preproduction-grid .pre-img8{object-position:center 17%}
+.preproduction-grid .pre-img8{object-position:center 23%}
 .preproduction-grid .pre-img9{object-position:center 20%}
 .preproduction-grid .pre-img10{object-position:center 20%}
 .preproduction-grid .pre-img11{object-position:center 12%}
@@ -61,3 +61,13 @@
 /* La tarjeta de producción presenta primero el título y después su categoría. */
 .production-info .production-category{margin:.9rem 0 1.4rem;letter-spacing:.12em}
 .production-info h3{margin-bottom:0}
+
+
+/* Ajustes finales de encuadre en la galería de escena y pre-producción. */
+/* En escritorio IMG_9827 ocupa el mismo módulo ancho que IMG_9799. */
+.stage-gallery .gallery-item[data-lightbox="IMG_9827"] img{object-position:center 60%;object-fit:cover}
+@media(max-width:767.98px){
+  .preproduction-grid .pre-img1{object-fit:contain;object-position:center center;background:#171717}
+  /* En móvil IMG_9827 tiene una fila exclusiva a todo lo ancho. */
+  .stage-gallery .gallery-item[data-lightbox="IMG_9827"]{grid-column:1 / -1;grid-row:span 3;justify-self:center;width:100%;height:100%}
+}
